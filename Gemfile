@@ -26,6 +26,9 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
+# Trying to fix deployment https://stackoverflow.com/questions/70500220/rails-7-ruby-3-1-loaderror-cannot-load-such-file-net-smtp
+gem 'net-smtp', require: false
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.4'
